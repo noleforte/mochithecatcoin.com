@@ -128,9 +128,9 @@ h6 {
 }
 
 [class*=__container] {
-    max-width: 80.375rem;
+    max-width: 81.375rem;
     margin: 0 auto;
-    padding: 0 .9375rem;
+    padding: 83px .9375rem;
 }
 
 body::after {
@@ -4533,9 +4533,7 @@ span.orange {
         font-size: 1.25rem
     }
 
-    .how-to-buy__top {
-        margin-bottom: 11.25rem
-    }
+
 
     .top-how-to-buy__buttons {
         margin-bottom: 6.25rem
