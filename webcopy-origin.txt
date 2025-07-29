@@ -298,7 +298,7 @@ Uri: https://mochithecatcoin.com/img/line/copy.svg
 File Name: C:\Downloaded Web Sites\mochithecatcoin.com\img\line\copy.svg
 Content Type: image/svg+xml
 
-Uri: https://mochithecatcoin.com/img/logo.png
+Uri: https://mochithecatcoin.com/img/icons/ico0.png
 File Name: C:\Downloaded Web Sites\mochithecatcoin.com\img\logo.png
 Content Type: image/png
 

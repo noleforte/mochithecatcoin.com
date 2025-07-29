@@ -324,7 +324,11 @@ body::after {
 
 .header {
     position: relative;
-    z-index: 10
+    z-index: 10;
+    background-image: url(../img/hero/bg1.png) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
 }
 
 .header__box {
@@ -355,7 +359,7 @@ body::after {
     justify-content: center;
     border-right: .125rem solid #000;
     border-bottom: .125rem solid #000;
-    background-color: #fff;
+    background-color: transparent;
     margin-right: -.0625rem;
     -webkit-transition: -webkit-box-shadow .2s ease 0s;
     transition: -webkit-box-shadow .2s ease 0s;
@@ -400,11 +404,19 @@ body::after {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 100%
+    width: 100%;
+    background-image: url(../img/hero/bg1.png) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
 }
 
 .menu__body {
-    width: 100%
+    width: 100%;
+    background-image: url(../img/hero/bg1.png) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
 }
 
 .menu__list {
@@ -416,7 +428,11 @@ body::after {
     align-items: center;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between
+    justify-content: space-between;
+    background-image: url(../img/hero/bg1.png) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
 }
 
 .menu__item {
@@ -448,7 +464,7 @@ body::after {
     margin-right: -.0625rem;
     margin-left: -.0625rem;
     border-top: none;
-    background-color: #fff;
+    background-color: transparent;
     -webkit-transition: -webkit-box-shadow .2s ease 0s;
     transition: -webkit-box-shadow .2s ease 0s;
     transition: box-shadow .2s ease 0s;
@@ -561,13 +577,85 @@ body::after {
     aspect-ratio: 1;
     opacity: 1;
     visibility: visible;
-    overflow: visible
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+/* Десктопные стили для footer__left-decor */
+@media (min-width: 769px) {
+    .footer__left-decor {
+        width: 15%;
+        min-width: 10rem;
+        bottom: 10%;
+        left: 5%;
+        display: block;
+        align-items: stretch;
+        justify-content: flex-start;
+    }
+}
+
+/* Стили для разрешения 1440x900 */
+@media (min-width: 1440px) and (max-width: 1679px) {
+    .footer__left-decor {
+        display: none !important;
+    }
+}
+
+/* Стили для разрешения 1680x1050 */
+@media (min-width: 1680px) and (max-width: 1919px) {
+    .footer__left-decor {
+        display: none !important;
+    }
+}
+
+/* Стили для разрешения 1680x1050 */
+@media (min-width: 1680px) {
+    .footer__left-decor {
+        width: 180px;
+        height: 180px;
+        bottom: 40px;
+        left: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .footer__left-decor img {
     width: 100%;
-    height: auto;
-    object-fit: contain
+    height: 100%;
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%
+}
+
+/* Десктопные стили для изображений в footer__left-decor */
+@media (min-width: 769px) {
+    .footer__left-decor img {
+        width: 90%;
+        height: 90%;
+        object-fit: contain;
+    }
+}
+
+/* Стили для изображений на разрешении 1440x900 */
+@media (min-width: 1440px) and (max-width: 1679px) {
+    .footer__left-decor img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+/* Стили для изображений на разрешении 1680x1050 */
+@media (min-width: 1680px) {
+    .footer__left-decor img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
 }
 
 .footer__columns {
@@ -743,13 +831,85 @@ body::after {
     aspect-ratio: 1;
     opacity: 1;
     visibility: visible;
-    overflow: visible
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+/* Десктопные стили для footer__decor */
+@media (min-width: 769px) {
+    .footer__decor {
+        width: 15%;
+        min-width: 10rem;
+        bottom: 10%;
+        right: 5%;
+        display: block;
+        align-items: stretch;
+        justify-content: flex-start;
+    }
+}
+
+/* Стили для разрешения 1440x900 */
+@media (min-width: 1440px) and (max-width: 1679px) {
+    .footer__decor {
+        display: none !important;
+    }
+}
+
+/* Стили для разрешения 1680x1050 */
+@media (min-width: 1680px) and (max-width: 1919px) {
+    .footer__decor {
+        display: none !important;
+    }
+}
+
+/* Стили для разрешения 1680x1050 */
+@media (min-width: 1680px) {
+    .footer__decor {
+        width: 180px;
+        height: 180px;
+        bottom: 40px;
+        right: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .footer__decor img {
     width: 100%;
-    height: auto;
-    object-fit: contain
+    height: 100%;
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%
+}
+
+/* Десктопные стили для изображений в footer__decor */
+@media (min-width: 769px) {
+    .footer__decor img {
+        width: 90%;
+        height: 90%;
+        object-fit: contain;
+    }
+}
+
+/* Стили для изображений на разрешении 1440x900 */
+@media (min-width: 1440px) and (max-width: 1679px) {
+    .footer__decor img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+/* Стили для изображений на разрешении 1680x1050 */
+@media (min-width: 1680px) {
+    .footer__decor img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
 }
 
 ::-webkit-scrollbar {
@@ -1203,7 +1363,11 @@ body::after {
 }
 
 .page__hero {
-    padding-top: 7.8125rem
+    padding-top: 7.8125rem;
+    background-image: url(../img/hero/pic_5.png) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
 }
 
 .hero {
@@ -4245,8 +4409,19 @@ span.orange {
         padding-bottom: 5rem
     }
 
+    .page__buy-mochi {
+        background-image: url(../img/hero/pic_6.png) !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+    }
+
     .page__base {
-        padding-top: 7.5rem
+        padding-top: 7.5rem;
+        background-image: url(../img/hero/pic_2.png) !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
     }
 
     .page__base {
@@ -4254,7 +4429,11 @@ span.orange {
     }
 
     .page__items {
-        padding-top: 12.5rem
+        padding-top: 12.5rem;
+        background-image: url(../img/hero/pic_4.png) !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
     }
 
     .page__items {
@@ -5265,7 +5444,10 @@ span.orange {
         left: 0;
         top: -100%;
         overflow: auto;
-        background-color: #f56221;
+        background-image: url(../img/hero/bg1.png) !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
         padding: 8.125rem .9375rem 1.875rem .9375rem;
         -webkit-transition: top .3s;
         transition: top .3s
@@ -5281,7 +5463,10 @@ span.orange {
         -webkit-transition: top .3s;
         transition: top .3s;
         z-index: 2;
-        background-color: #f56221
+        background-image: url(../img/hero/bg1.png) !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
     }
 
     .menu-open .menu__body {
