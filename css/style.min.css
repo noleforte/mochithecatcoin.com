@@ -131,7 +131,7 @@ h6 {
     max-width: 80.375rem;
     margin: 0 auto;
     padding: 0 .9375rem;
-
+    margin-bottom: 5%;
 }
 
 body::after {
