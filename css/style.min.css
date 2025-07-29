@@ -2052,7 +2052,7 @@ span.orange {
 
 .base__decor-item--2 img {
     position: absolute;
-    left: 50%;
+    left: 130%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%)
