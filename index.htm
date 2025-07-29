@@ -1,0 +1,1526 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Duge</title>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <style>
+      @keyframes exit-load {
+        0% {
+          opacity: 1;
+          visibility: visible;
+        }
+
+        100% {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+
+      @keyframes load-scale {
+        0% {
+          scale: 0.5;
+        }
+
+        50% {
+          scale: 1;
+        }
+
+        100% {
+          scale: 0.5;
+        }
+      }
+
+      .loader {
+        position: fixed;
+        inset: 0;
+        z-index: 500;
+        /* background-color: #000; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: none;
+      }
+
+      .loaded .loader {
+        animation: exit-load 0.45s ease 0.6s forwards;
+      }
+
+      .loader img {
+        display: inline-block;
+        width: 200px;
+        animation: load-scale 1.5s linear infinite;
+      }
+    </style>
+    <link rel="stylesheet" href="css/style.min.css?_v=20240529214234" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- <meta name="robots" content="noindex, nofollow"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+          <div class="loader">
+        <img src="img/hero/title.png" alt="Cat Image" />
+      </div>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__box">
+          <a href="index.html" class="header__logo"
+            ><img src="img/logo.png" alt="Logo Icon" /><i></i
+          ></a>
+          <div class="header__menu menu">
+            <button type="button" class="menu__icon icon-menu">
+              <span></span><i></i>
+            </button>
+            <nav class="menu__body">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="index.html" class="menu__link menu__link--mochi">
+                    <img src="img/hero/title.png" alt="DUGE" style="height: 1.2em; vertical-align: middle;" />
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a
+                    target="_blank"
+                    href="https://twitter.com/mochi_token/status/1694086078183973196"
+                    class="menu__link"
+                  >
+                    <span>Art</span>
+                    <div>
+                      <img src="img/icons/01.svg" alt="Icon" /><img
+                        src="img/icons/01-white.svg"
+                        alt="Icon"
+                      />
+                    </div>
+                  </a>
+                </li>
+
+                <li class="menu__item">
+                  <a
+                    target="_blank"
+                    href="https://opensea.io/collection/mochimonsbase"
+                    class="menu__link"
+                  >
+                    <span>Duge NFTs</span>
+                    <div>
+                      <img src="img/icons/02.svg" alt="Icon" /><img
+                        src="img/icons/02-white.svg"
+                        alt="Icon"
+                      />
+                    </div>
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a
+                    target="_blank"
+                    href="https://t.me/Mochi_Inspector_bot"
+                    class="menu__link"
+                  >
+                    <span>Inspector Bot</span>
+                    <div>
+                      <img src="img/icons/03.svg" alt="Icon" /><img
+                        src="img/icons/03-white.svg"
+                        alt="Icon"
+                      />
+                    </div>
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a
+                    target="_blank"
+                    href="#"
+                    data-goto=".page__how-to-buy"
+                    class="menu__link menu__link--dark"
+                  >
+                    <span>How to get <span>$DUGE</span></span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main class="page">
+        <section class="page__hero hero" style="opacity: 0; transition: opacity 0.5s ease-in-out;">
+          <div class="hero__background">
+            <img src="img/hero/bg1.png" alt="Sky Image" />
+            <img src="img/hero/bg1.png" alt="Sky Image" />
+            <img src="img/hero/bg1.png" alt="Sky Image" />
+          </div>
+          <div class="hero__container">
+            <h1 class="hero__title">
+              <div style="display: flex; align-items: center; justify-content: center;">
+                <img src="img/hero/dog.png" alt="Dog Image" style="height: 200px; order: 1; margin-top: 18%; height: auto; width: auto;" />
+                <div style="order: 2; text-align: center;">
+                  <img src="img/hero/title.png" alt="DUGE DOG" style="height: 80%; max-width: 100%;margin-right: 10%;" />
+                </div>
+              </div>
+                          </h1>
+              <img src="img/hero/s1.png" alt="Line" style="width: 100vw; max-width: none; margin: 30px 0; display: block; position: relative; left: 50%; transform: translateX(-50%);" />
+              <div class="hero__bottom">
+              <div class="hero__bottom-text">
+
+              </div>
+              <div class="hero__bottom-buttons">
+                <a
+                  target="_blank"
+                  href="https://dexscreener.com/base/0xfcc89a1f250d76de198767d33e1ca9138a7fb54b"
+                  class="hero__bottom-button"
+                  ><span>Chart</span
+                  ><img src="img/icons/arrow.svg" alt="Arrow Icon"
+                /></a>
+                <a
+                  href="#"
+                  data-goto=".page__join"
+                  class="hero__bottom-button hero__bottom-button--white"
+                  ><span>Join us</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__buy-mochi buy-mochi">
+          <div class="buy-mochi__backgroung">
+            <img src="img/buy/background.png" alt="Background picture" />
+          </div>
+          <div class="buy-mochi__box">
+            <div
+              data-watch-threshold="0.5"
+              data-watch-once
+              data-watch
+              class="buy-mochi__content content-buy-mochi"
+            >
+              <div class="content-buy-mochi__background"></div>
+              <h2
+                data-watch-threshold="0.5"
+                data-watch-once
+                data-watch
+                class="content-buy-mochi__title"
+              >
+                <span>G</span><span>e</span><span>t</span> <br />
+                <span>$</span><span>D</span><span>U</span><span>G</span
+                ><span>E</span>
+              </h2>
+              <div class="content-buy-mochi__images">
+                <div class="content-buy-mochi__image-text">
+                  <img src="img/buy/05.png" alt="Icon" />
+                </div>
+                <div class="content-buy-mochi__image-cat">
+                  <img src="img/buy/01.png" alt="Cat Image" />
+                </div>
+              </div>
+            </div>
+            <div class="buy-mochi__items">
+              <a
+                target="_blank"
+                href="#"
+                data-goto=".page__how-to-buy"
+                class="buy-mochi__item item-buy-mochi"
+              >
+                <h3 class="item-buy-mochi__title">
+                  <span>How to get</span
+                  ><img src="img/icons/arrow.svg" alt="Arrow Icon" />
+                </h3>
+                <div class="item-buy-mochi__text">
+                  $DUGE is on Solana. View our tutorial here.
+                </div>
+              </a>
+              <div class="buy-mochi__item-box">
+                <a
+                  target="_blank"
+                  href="https://jup.ag/swap?sell=So11111111111111111111111111111111111111112&buy=6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN"
+                  class="buy-mochi__item item-buy-mochi"
+                >
+                  <h3 class="item-buy-mochi__title">
+                    <span>Jupiter</span>
+                    <img src="img/icons/jupiter-ag-jup-logo.png" alt="Image" />
+                  </h3>
+                </a>
+                <a
+                  target="_blank"
+                  href="https://phantom.com/"
+                  class="buy-mochi__item item-buy-mochi"
+                >
+                  <h3 class="item-buy-mochi__title">
+                    <img src="img/icons/4850.sp3ow1.192x192.png" alt="Image" />
+                    <span>Phantom Wallet</span>
+                  </h3>
+                </a>
+              </div>
+              <a
+                target="_blank"
+                href="https://dexscreener.com/solana/58fzjmbx5patnfjpqwwsqkvfprkptkbb5r2vcw4qq3z9"
+                class="buy-mochi__item item-buy-mochi"
+              >
+                <h3 class="item-buy-mochi__title">
+                  <span>DEXSCREENER</span>
+                  <img src="img/icons/dex-screener-seeklogo.png" alt="Image" />
+                  <img src="img/icons/arrow.svg" alt="Arrow Icon" />
+                </h3>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="page__base base">
+          <div class="base__container">
+            <div class="base__decor-item base__decor-item--1">
+              <img loading="lazy" src="img/base/decor1.png" alt="Decor Image" />
+            </div>
+            <div class="base__decor-item base__decor-item--2">
+              <img loading="lazy" src="img/base/decor2.png" alt="Decor Image" />
+            </div>
+            <div
+              data-watch-threshold="0.6"
+              data-watch-once
+              data-watch
+              class="base__header"
+            >
+              <h2 class="base__header-title">
+                <span>D</span><span>U</span><span>G</span><span>E</span
+                ><span>!</span><i></i>
+              </h2>
+              <div class="base__header-label">DUGE on SOLANA</div>
+            </div>
+            <div class="base__items">
+              <div class="base__item item-base">
+                <div class="item-base__text">
+                  Named after the CEO of Solana's pet dog, $DUGE pairs the
+                  unstoppable narrative of being Solana's dog with Solana's push
+                  to bring the masses onchain to Solana. The masses will love
+                  Duge, and thousands on Solana already do.
+                </div>
+                <div
+                  data-watch-threshold="0.8"
+                  data-watch-once
+                  data-watch
+                  class="item-base__image"
+                >
+                  <span
+                    >That's quite <br />
+                    the combo!
+                  </span>
+                  <img src="img/base/01.svg" alt="Icon" />
+                </div>
+              </div>
+              <div class="base__item item-base">
+                <div class="item-base__text">
+                  Duge is cute, orange, living onchain and helping Solana in
+                  their mission to onboard 1 Billion people to Solana.
+                </div>
+                <div
+                  data-watch-threshold="0.8"
+                  data-watch-once
+                  data-watch
+                  class="item-base__image"
+                >
+                  <span
+                    >We received a grant<br />
+                    from Solana!</span
+                  >
+                  <img src="img/base/02.svg" alt="Icon" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="page__line line">
+          <div class="line__line">
+            <div class="line__line-row">
+              <div class="line__line-item line__line-item--mob">
+                <span>DUGE on SOLANA</span>
+              </div>
+              <div class="line__line-item line__line-item--mob">
+                <img src="img/line/02.png" alt="Smile Icon" />
+              </div>
+              <div class="line__line-item line__line-item--tab">
+                <span>DUGE on SOLANA</span>
+              </div>
+              <div class="line__line-item line__line-item--tab">
+                <img src="img/line/03.png" alt="Smile Icon" />
+              </div>
+              <div class="line__line-item">
+                <span>DUGE on SOLANA</span>
+              </div>
+              <div class="line__line-item">
+                <img src="img/line/01.png" alt="Smile Icon" />
+              </div>
+              <div class="line__line-item line__line-item--pc">
+                <span>DUGE on SOLANA</span>
+              </div>
+              <div class="line__line-item line__line-item--pc">
+                <img src="img/line/02.png" alt="Smile Icon" />
+              </div>
+              <div class="line__line-item line__line-item--pc">
+                <span>DUGE on SOLANA</span>
+              </div>
+              <div class="line__line-item line__line-item--pc">
+                <img src="img/line/03.png" alt="Smile Icon" />
+              </div>
+            </div>
+            <div class="line__line-row">
+              <div class="line__line-item line__line-item--mob">
+                <span>DUGE on SOLANA</span>
+              </div>
+              <div class="line__line-item line__line-item--mob">
+                <img src="img/line/02.png" alt="Smile Icon" />
+              </div>
+              <div class="line__line-item line__line-item--tab">
+                <span>DUGE on SOLANA</span>
+              </div>
+              <div class="line__line-item line__line-item--tab">
+                <img src="img/line/03.png" alt="Smile Icon" />
+              </div>
+              <div class="line__line-item">
+                <span>DUGE on SOLANA</span>
+              </div>
+              <div class="line__line-item">
+                <img src="img/line/01.png" alt="Smile Icon" />
+              </div>
+              <div class="line__line-item line__line-item--pc">
+                <span>DUGE on SOLANA</span>
+              </div>
+              <div class="line__line-item line__line-item--pc">
+                <img src="img/line/02.png" alt="Smile Icon" />
+              </div>
+              <div class="line__line-item line__line-item--pc">
+                <span>DUGE on SOLANA</span>
+              </div>
+              <div class="line__line-item line__line-item--pc">
+                <img src="img/line/03.png" alt="Smile Icon" />
+              </div>
+            </div>
+          </div>
+          <div
+            data-watch-threshold="0.8"
+            data-watch-once
+            data-watch
+            class="line__cloud"
+          >
+            <div class="line__cloud-background">
+              <img src="img/line/cloud.svg" alt="Cloud Image" />
+            </div>
+            <div class="line__cloud-body">
+              <div class="line__cloud-body-background">
+                <img loading="lazy" src="img/line/cat.png" alt="Cat Image" />
+              </div>
+              <h3 class="line__cloud-title">$DUGE Contract Address</h3>
+              <div class="line__cloud-bottom">
+                <div class="line__cloud-number">
+                  0xf6e932ca12afa26665dc4dde7e27be02a7c02e50
+                </div>
+                <button type="button" class="line__cloud-button">
+                  <img src="img/line/copy.svg" alt="Copy Icon" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="page__items items">
+          <div class="items__background">
+            <div>
+              <img
+                loading="lazy"
+                src="img/items/01.png"
+                alt="Background Image"
+              />
+            </div>
+            <div>
+              <img loading="lazy" src="img/items/cat.png" alt="Cat Image" />
+            </div>
+          </div>
+          <div class="items__container">
+            <div class="items__body">
+              <div
+                data-watch-threshold="0.3"
+                data-watch-once
+                data-watch
+                class="items__item item-items"
+              >
+                <span class="item-items__decor-top"><i></i><i></i></span>
+                <h3 class="item-items__title">
+                  <span>0</span><span>%</span> <span>i</span><span>T</span
+                  ><span>a</span><span>x.</span>
+                </h3>
+                <div class="item-items__text">
+                  There are no contract fees when swapping $DUGE.
+                </div>
+                <!-- <a
+                  target="_blank"
+                  href="https://medium.com/@mochibase/mochis-migration-to-sustainable-growth-77c7486121f5"
+                  class="item-items__button"
+                  ><span>read more</span></a
+                > -->
+              </div>
+              <div
+                data-watch-threshold="0.3"
+                data-watch-once
+                data-watch
+                class="items__item item-items"
+              >
+                <span class="item-items__decor-top"><i></i><i></i></span>
+                <h3 class="item-items__title">
+                  <span>L</span><span>o</span><span>c</span><span>k</span
+                  ><span>e</span><span>d</span><span>i</span> <span>L</span
+                  ><span>P.</span>
+                </h3>
+                <div class="item-items__text">
+                  Rest assured! Duge's liquidity is locked.
+                </div>
+              </div>
+              <div
+                data-watch-threshold="0.3"
+                data-watch-once
+                data-watch
+                class="items__item item-items"
+              >
+                <span class="item-items__decor-top"><i></i><i></i></span>
+                <h3 class="item-items__title">
+                  <span>S</span><span>A</span><span>F</span><span>E</span>
+                  <span>i</span><br /><span>C</span><span>O</span><span>N</span
+                  ><span>T</span><span>R</span><span>A</span><span>C</span
+                  ><span>T</span>
+                </h3>
+                <div class="item-items__text">
+                  The contract has no malicious functions. View the audit by
+                  CyberScope here
+                </div>
+                <a
+                  target="_blank"
+                  href="https://www.cyberscope.io/audits/2-mochi"
+                  class="item-items__button"
+                  ><span>read more</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__how-to-buy how-to-buy">
+          <div class="how-to-buy__top top-how-to-buy">
+            <div style="display: none" class="top-how-to-buy__buttons">
+              <button class="top-how-to-buy__button active">
+                <span>Desktop</span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="48"
+                  height="48"
+                  fill="none"
+                >
+                  <path
+                    fill="#fff"
+                    d="M2 6h44v30H26v4h8v4H14v-4h8v-4H2V6Zm4 4v22h36V10H6Z"
+                  ></path>
+                  <path fill="#fff" d="M20 36h8v4h-8z"></path>
+                </svg>
+              </button>
+              <button class="top-how-to-buy__button">
+                <span>Mobile</span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="48"
+                  height="48"
+                  fill="none"
+                >
+                  <path
+                    fill="#000"
+                    d="M33 0h-3v6H12v42h21V0ZM18 42h-3v-3h3v3Zm0-6h-3v-3h3v3Zm0-6h-3v-3h3v3Zm6 12h-3v-3h3v3Zm0-6h-3v-3h3v3Zm0-6h-3v-3h3v3Zm6 12h-3v-3h3v3Zm0-6h-3v-3h3v3Zm0-6h-3v-3h3v3Zm0-6H15V12h15v12Z"
+                  ></path>
+                </svg>
+              </button>
+
+            </div>
+            <div  class="top-how-to-buy__container">
+              <div class="top-how-to-buy__book active book-top-how-to-buy">
+                <div class="book-top-how-to-buy__box">
+                  <div
+                    data-watch-threshold="0.5"
+                    data-watch-once
+                    data-watch
+                    class="book-top-how-to-buy__item-first-page"
+                  >
+                    <div class="book-top-how-to-buy__item-first-page-lables">
+                      <div class="book-top-how-to-buy__item-first-page-lable" onclick="switchToDesktop()" style="cursor: pointer;">
+                        <img
+                          src="img/how-to-buy/label-box-active.svg"
+                          alt="Icon"
+                        />
+                        <img src="img/how-to-buy/desktop.svg" alt="Icon" />
+                      </div>
+                      <div class="book-top-how-to-buy__item-first-page-lable" onclick="switchToMobile()" style="cursor: pointer;">
+                        <img src="img/how-to-buy/label-box.svg" alt="Icon" />
+                        <img src="img/how-to-buy/mobile.svg" alt="Icon" />
+                      </div>
+                    </div>
+                    <div class="book-top-how-to-buy__item-first-page-body">
+                      <h2 class="book-top-how-to-buy__item-first-page-title">
+                        <span>H</span><span>o</span><span>w</span> <span>i</span
+                        ><span>t</span><span>o</span> <span>i</span
+                        ><span>G</span><span>e</span><span>t</span> <br />
+                        <span class="orange">$</span
+                        ><span class="orange">D</span
+                        ><span class="orange">U</span
+                        ><span class="orange">G</span
+                        ><span class="orange">E</span>
+                      </h2>
+                      <p>ON DESKTOP</p>
+                    </div>
+                    <div class="book-top-how-to-buy__item-label">Page 1</div>
+                  </div>
+                  <div class="book-top-how-to-buy__item-wrapper">
+                    <div
+                      class="book-top-how-to-buy__item book-top-how-to-buy__item--front"
+                    >
+                      <div class="book-top-how-to-buy__item-body">
+                        <h3 class="book-top-how-to-buy__item-title">
+                          Introduction
+                        </h3>
+                        <div class="book-top-how-to-buy__item-text">
+                          <p>
+                            $DUGE is a token on
+                            <span class="solana-icon">Solana</span>
+                          </p>
+                          <p>
+                            To buy it, you’ll need the Phantom wallet and some
+                            SOL in it. The process is quick and simple.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="book-top-how-to-buy__item-label">Page 2</div>
+                      <button
+                        type="button"
+                        class="book-top-how-to-buy__item-button"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="32"
+                          viewbox="0 0 32 32"
+                          fill="none"
+                        >
+                          <path
+                            d="M22.6667 14.6666V13.3333H21.3333V12H18.6667V9.33329H16V6.66663H13.3333V3.99996H10.6667V2.66663H8V6.66663H10.6667V9.33329H13.3333V12H16V14.6666H18.6667V17.3333H16V20H13.3333V22.6666H10.6667V25.3333H8V29.3333H10.6667V28H13.3333V25.3333H16V24V22.6666H18.6667V21.3333V20H21.3333V18.6666H22.6667V17.3333H24V16V14.6666H22.6667Z"
+                            fill="black"
+                          ></path>
+                        </svg>
+                      </button>
+                    </div>
+                    <div
+                      class="book-top-how-to-buy__item book-top-how-to-buy__item--back"
+                    >
+                      <div class="book-top-how-to-buy__item-body">
+                        <h3 class="book-top-how-to-buy__item-title">
+                          STEP <span>1</span>
+                        </h3>
+                        <div class="book-top-how-to-buy__item-text">
+                          <p>Go to <a href="https://phantom.app">phantom.app</a></p>
+                          <p>Download the browser extension or desktop app</p>
+                          <p>
+                            Create a new wallet or restore an existing one using
+                            your seed phrase
+                          </p>
+                          <p>
+                            Save the seed phrase securely — it’s the only way to
+                            access your funds
+                          </p>
+                        </div>
+                      </div>
+                      <div class="book-top-how-to-buy__item-label">Page 3</div>
+                      <button
+                        type="button"
+                        class="book-top-how-to-buy__item-button"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="32"
+                          viewbox="0 0 32 32"
+                          fill="none"
+                        >
+                          <path
+                            d="M22.6667 14.6666V13.3333H21.3333V12H18.6667V9.33329H16V6.66663H13.3333V3.99996H10.6667V2.66663H8V6.66663H10.6667V9.33329H13.3333V12H16V14.6666H18.6667V17.3333H16V20H13.3333V22.6666H10.6667V25.3333H8V29.3333H10.6667V28H13.3333V25.3333H16V24V22.6666H18.6667V21.3333V20H21.3333V18.6666H22.6667V17.3333H24V16V14.6666H22.6667Z"
+                            fill="black"
+                          ></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="book-top-how-to-buy__item-wrapper">
+                    <div
+                      class="book-top-how-to-buy__item book-top-how-to-buy__item--front"
+                    >
+                      <div class="book-top-how-to-buy__item-body">
+                        <h3 class="book-top-how-to-buy__item-title">
+                          STEP <span>2</span>
+                        </h3>
+                        <div class="book-top-how-to-buy__item-text">
+                          <p>
+                            You’ll need SOL in your wallet to swap for $DUGE.
+                            Here are your options:
+                          </p>
+                          <p>
+                            Option A: Withdraw SOL from an exchange
+							<p>Buy SOL on <a href="https://www.binance.com/en/trade/SOL_USDT">Binance</a>, <a href="https://www.bybit.com/en-US/trade/SOL/USDT">Bybit</a>, <a href="https://www.okx.com/trade-spot/solana-usdt">OKX</a>, or other exchanges</p>
+							<p>Withdraw to your Phantom wallet address</p>
+							<p>Make sure to select the Solana network when withdrawing</p>
+                          </p>
+                          <p>
+                            Option B: Bridge from another chain
+							<p>If you hold assets on other blockchains, you can bridge to Solana using:</p>
+							<p><a href="https://jup.ag/swap">Jupiter Aggregator</a> (for cross-chain swaps)</p>
+							<p><a href="https://portal.bridge.org/">Portal Bridge</a></p>
+							<p><a href="https://allbridge.io/">Allbridge</a></p>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="book-top-how-to-buy__item-label">Page 4</div>
+                      <button
+                        type="button"
+                        class="book-top-how-to-buy__item-button"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="32"
+                          viewbox="0 0 32 32"
+                          fill="none"
+                        >
+                          <path
+                            d="M22.6667 14.6666V13.3333H21.3333V12H18.6667V9.33329H16V6.66663H13.3333V3.99996H10.6667V2.66663H8V6.66663H10.6667V9.33329H13.3333V12H16V14.6666H18.6667V17.3333H16V20H13.3333V22.6666H10.6667V25.3333H8V29.3333H10.6667V28H13.3333V25.3333H16V24V22.6666H18.6667V21.3333V20H21.3333V18.6666H22.6667V17.3333H24V16V14.6666H22.6667Z"
+                            fill="black"
+                          ></path>
+                        </svg>
+                      </button>
+                    </div>
+                    <div
+                      class="book-top-how-to-buy__item book-top-how-to-buy__item--back"
+                    >
+                      <div class="book-top-how-to-buy__item-body">
+                        <h3 class="book-top-how-to-buy__item-title">
+                          STEP <span>3</span>
+                        </h3>
+                        <div class="book-top-how-to-buy__item-text">
+                          <p>
+							Use any Solana-compatible DEX. Recommended options:
+                          </p>
+                          <p>
+                            Method A: Via Jupiter
+							<br>Go to <a href="https://jup.ag">jup.ag</a>
+							Connect your Phantom wallet
+							Select SOL as the token to swap
+							In the receive field, paste the $DUGE token address:
+							<p style="background-color: #f0f0f0; padding: 10px; border-radius: 5px; cursor: pointer; user-select: none;" class="copy-address" onclick="copyToClipboard('0xF6e932Ca12afa26665dC4dDE7e27be02A7c02e50')" title="Click to copy">0xF6e932Ca12afa26665dC4dDE7e27be02A7c02e50</p>
+							<p>Set slippage to 3–4%. Confirm the swap in your wallet</p>
+                          </p>
+                          <p>
+							Method B: Via Dexscreener <br>
+							Visit <a href="https://dexscreener.com">dexscreener.com</a>.
+							Search for $DUGE or paste the token address.
+							Click on the preferred DEX (Jupiter or Raydium).
+							Connect your wallet and proceed with the swap.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="book-top-how-to-buy__item-label">Page 5</div>
+                      <button
+                        type="button"
+                        class="book-top-how-to-buy__item-button"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="32"
+                          viewbox="0 0 32 32"
+                          fill="none"
+                        >
+                          <path
+                            d="M22.6667 14.6666V13.3333H21.3333V12H18.6667V9.33329H16V6.66663H13.3333V3.99996H10.6667V2.66663H8V6.66663H10.6667V9.33329H13.3333V12H16V14.6666H18.6667V17.3333H16V20H13.3333V22.6666H10.6667V25.3333H8V29.3333H10.6667V28H13.3333V25.3333H16V24V22.6666H18.6667V21.3333V20H21.3333V18.6666H22.6667V17.3333H24V16V14.6666H22.6667Z"
+                            fill="black"
+                          ></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="book-top-how-to-buy__item-last-page">
+                    <div class="book-top-how-to-buy__item-body">
+                      <h3 class="book-top-how-to-buy__item-title">
+                        STEP <span>4</span>
+                      </h3>
+                      <div class="book-top-how-to-buy__item-text">
+                        <p> Confirm the Transaction.</p>
+                        <p>Once the swap is complete, $DUGE will appear in your wallet.</p>
+                        <p>
+							If it doesn't show up automatically, add it manually using the token address:
+                        </p>
+						<p style="background-color: #f0f0f0; padding: 10px; border-radius: 5px; cursor: pointer; user-select: none;" class="copy-address" onclick="copyToClipboard('0xF6e932Ca12afa26665dC4dDE7e27be02A7c02e50')" title="Click to copy">0xF6e932Ca12afa26665dC4dDE7e27be02A7c02e50</p>
+
+                      </div>
+                    </div>
+                    <div class="book-top-how-to-buy__item-label">Page 6</div>
+                  </div>
+                </div>
+              </div>
+              <div
+                style="display: none"
+                class="top-how-to-buy__book book-top-how-to-buy"
+              >
+                <div class="book-top-how-to-buy__box">
+                  <div
+                    data-watch-threshold="0.5"
+                    data-watch-once
+                    data-watch
+                    class="book-top-how-to-buy__item-first-page"
+                  >
+                    <div class="book-top-how-to-buy__item-first-page-lables">
+                      <div class="book-top-how-to-buy__item-first-page-lable" onclick="switchToDesktop()" style="cursor: pointer;">
+                        <img src="img/how-to-buy/label-box.svg" alt="Icon" />
+                        <img src="img/how-to-buy/desktop.svg" alt="Icon" />
+                      </div>
+                      <div class="book-top-how-to-buy__item-first-page-lable" onclick="switchToMobile()" style="cursor: pointer;">
+                        <img
+                          src="img/how-to-buy/label-box-active.svg"
+                          alt="Icon"
+                        />
+                        <img src="img/how-to-buy/mobile.svg" alt="Icon" />
+                      </div>
+
+                    </div>
+                    <div class="book-top-how-to-buy__item-first-page-body">
+                      <h2 class="book-top-how-to-buy__item-first-page-title">
+                        <span>H</span><span>o</span><span>w</span> <span>i</span
+                        ><span>t</span><span>o</span> <span>i</span
+                        ><span>B</span><span>u</span><span>y</span> <br />
+                        <span class="orange">$</span
+                        ><span class="orange">D</span
+                        ><span class="orange">U</span
+                        ><span class="orange">G</span
+                        ><span class="orange">E</span>
+                      </h2>
+                      <p>ON MOBILE</p>
+                    </div>
+                    <div class="book-top-how-to-buy__item-label">Duge</div>
+                  </div>
+                  <div class="book-top-how-to-buy__item-wrapper">
+                    <div
+                      class="book-top-how-to-buy__item book-top-how-to-buy__item--front"
+                    >
+                      <div class="book-top-how-to-buy__item-body">
+                        <h3 class="book-top-how-to-buy__item-title">
+                          STEP <span>1</span>
+                        </h3>
+                        <div class="book-top-how-to-buy__item-text">
+                          <p>
+                            Download Phantom Wallet from the App Store or Google Play
+                          </p>
+                          <p>
+                            Create a new wallet or import one with your seed phrase
+                          </p>
+                          <p>
+                            Save your seed phrase securely
+                          </p>
+                        </div>
+                      </div>
+                      <div class="book-top-how-to-buy__item-label">Duge</div>
+                      <button
+                        type="button"
+                        class="book-top-how-to-buy__item-button"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="32"
+                          viewbox="0 0 32 32"
+                          fill="none"
+                        >
+                          <path
+                            d="M22.6667 14.6666V13.3333H21.3333V12H18.6667V9.33329H16V6.66663H13.3333V3.99996H10.6667V2.66663H8V6.66663H10.6667V9.33329H13.3333V12H16V14.6666H18.6667V17.3333H16V20H13.3333V22.6666H10.6667V25.3333H8V29.3333H10.6667V28H13.3333V25.3333H16V24V22.6666H18.6667V21.3333V20H21.3333V18.6666H22.6667V17.3333H24V16V14.6666H22.6667Z"
+                            fill="black"
+                          ></path>
+                        </svg>
+                      </button>
+                    </div>
+                    <div
+                      class="book-top-how-to-buy__item book-top-how-to-buy__item--back"
+                    >
+                      <div class="book-top-how-to-buy__item-body">
+                        <h3 class="book-top-how-to-buy__item-title">
+                          STEP <span>2</span>
+                        </h3>
+                        <div class="book-top-how-to-buy__item-text">
+                          <p>
+                            To buy $DUGE, you need SOL in your Phantom wallet. Here’s how:
+                          </p>
+                          <p>
+                            Option A: From an Exchange
+							<p>Buy SOL on <a href="https://www.binance.com/en/trade/SOL_USDT">Binance</a>, <a href="https://www.bybit.com/en-US/trade/SOL/USDT">Bybit</a>, <a href="https://www.okx.com/trade-spot/solana-usdt">OKX</a>, or similar</p>
+							<p>Withdraw to your Phantom Solana address</p>
+							<p>Choose Solana as the withdrawal network</p>
+                          </p>
+                          <p>
+                            Option B: Bridge from Other Chains
+							<p>Use a cross-chain bridge like:</p>
+							<p><a href="https://jup.ag/swap">Jupiter</a> (mobile-friendly DEX aggregator)</p>
+							<p><a href="https://portal.bridge.org/">Portal Bridge</a></p>
+							<p><a href="https://allbridge.io/">Allbridge</a></p>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="book-top-how-to-buy__item-label">Duge</div>
+                      <button
+                        type="button"
+                        class="book-top-how-to-buy__item-button"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="32"
+                          viewbox="0 0 32 32"
+                          fill="none"
+                        >
+                          <path
+                            d="M22.6667 14.6666V13.3333H21.3333V12H18.6667V9.33329H16V6.66663H13.3333V3.99996H10.6667V2.66663H8V6.66663H10.6667V9.33329H13.3333V12H16V14.6666H18.6667V17.3333H16V20H13.3333V22.6666H10.6667V25.3333H8V29.3333H10.6667V28H13.3333V25.3333H16V24V22.6666H18.6667V21.3333V20H21.3333V18.6666H22.6667V17.3333H24V16V14.6666H22.6667Z"
+                            fill="black"
+                          ></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="book-top-how-to-buy__item-wrapper">
+                    <div
+                      class="book-top-how-to-buy__item book-top-how-to-buy__item--front"
+                    >
+                      <div class="book-top-how-to-buy__item-body">
+                        <h3 class="book-top-how-to-buy__item-title">
+                          STEP <span>3</span>
+                        </h3>
+                        <div class="book-top-how-to-buy__item-text">
+                          <p>
+							Use any in-app browser or mobile-friendly DEX. Example:
+                          </p>
+                          <p>
+                            Option 1: Using Jupiter
+							In Phantom, open the in-app browser
+							<br>Go to <a href="https://jup.ag">jup.ag</a>
+							Connect your Phantom wallet
+							Select SOL as the token to swap
+							In the “You receive” field, paste the $DUGE token address:
+							<p style="background-color: #f0f0f0; padding: 10px; border-radius: 5px; cursor: pointer; user-select: none;" class="copy-address" onclick="copyToClipboard('0xF6e932Ca12afa26665dC4dDE7e27be02A7c02e50')" title="Click to copy">0xF6e932Ca12afa26665dC4dDE7e27be02A7c02e50</p>
+							<p>Set slippage to 3–4%. Tap Swap and approve in Phantom</p>
+                          </p>
+                          <p>
+							Option 2: Using Dexscreener <br>
+							Go to <a href="https://dexscreener.com">dexscreener.com</a>.
+							Search for $DUGE or paste the token address.
+							Choose a DEX (like Jupiter or Raydium).
+							Swap as above.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="book-top-how-to-buy__item-label">Duge</div>
+                      <button
+                        type="button"
+                        class="book-top-how-to-buy__item-button"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="32"
+                          viewbox="0 0 32 32"
+                          fill="none"
+                        >
+                          <path
+                            d="M22.6667 14.6666V13.3333H21.3333V12H18.6667V9.33329H16V6.66663H13.3333V3.99996H10.6667V2.66663H8V6.66663H10.6667V9.33329H13.3333V12H16V14.6666H18.6667V17.3333H16V20H13.3333V22.6666H10.6667V25.3333H8V29.3333H10.6667V28H13.3333V25.3333H16V24V22.6666H18.6667V21.3333V20H21.3333V18.6666H22.6667V17.3333H24V16V14.6666H22.6667Z"
+                            fill="black"
+                          ></path>
+                        </svg>
+                      </button>
+                    </div>
+                    <div
+                      class="book-top-how-to-buy__item book-top-how-to-buy__item--back"
+                    >
+                      <div class="book-top-how-to-buy__item-body">
+                        <h3 class="book-top-how-to-buy__item-title">
+                          STEP <span>4</span>
+                        </h3>
+                        <div class="book-top-how-to-buy__item-text">
+                          <p>
+							After confirming the transaction, $DUGE will appear in your wallet.
+                          </p>
+                          <p>
+                            If not — add the token manually using this address:
+                          </p>
+                          <p>
+							<p style="background-color: #f0f0f0; padding: 10px; border-radius: 5px; cursor: pointer; user-select: none;" class="copy-address" onclick="copyToClipboard('0xF6e932Ca12afa26665dC4dDE7e27be02A7c02e50')" title="Click to copy">0xF6e932Ca12afa26665dC4dDE7e27be02A7c02e50</p>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="book-top-how-to-buy__item-label">Duge</div>
+                      <button
+                        type="button"
+                        class="book-top-how-to-buy__item-button"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="32"
+                          viewbox="0 0 32 32"
+                          fill="none"
+                        >
+                          <path
+                            d="M22.6667 14.6666V13.3333H21.3333V12H18.6667V9.33329H16V6.66663H13.3333V3.99996H10.6667V2.66663H8V6.66663H10.6667V9.33329H13.3333V12H16V14.6666H18.6667V17.3333H16V20H13.3333V22.6666H10.6667V25.3333H8V29.3333H10.6667V28H13.3333V25.3333H16V24V22.6666H18.6667V21.3333V20H21.3333V18.6666H22.6667V17.3333H24V16V14.6666H22.6667Z"
+                            fill="black"
+                          ></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="book-top-how-to-buy__item-last-page">
+                    <div class="book-top-how-to-buy__item-label">Duge</div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+
+        <section class="page__join join">
+          <div data-prlx-parent class="join__main-back">
+            <img data-prlx src="img/hero/bg1.png" alt="Sky Image" />
+          </div>
+          <div class="join__container">
+            <div
+              data-watch-threshold="0.6"
+              data-watch-once
+              data-watch
+              class="join__body"
+            >
+              <div class="join__main-block">
+                <h2 class="join__title">
+                  <span>J</span><span>o</span><span>i</span><span>n</span
+                  ><span>i</span><span> </span><span>U</span><span>s</span>
+                </h2>
+                <a
+                  target="_blank"
+                  href="https://app.uniswap.org/explore/tokens/base/0xf6e932ca12afa26665dc4dde7e27be02a7c02e50"
+                  class="join__button"
+                  ><span>GET NOW</span></a
+                >
+              </div>
+              <div class="join__items">
+                <div class="join__item" style="--i: 1">
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/themochimons"
+                    class="join__link"
+                  >
+                    <img src="img/join/01.png" alt="Icon" />
+                  </a>
+                </div>
+                <div class="join__item" style="--i: 2">
+                  <a
+                    target="_blank"
+                    href="https://warpcast.com/~/channel/mochi"
+                    class="join__link"
+                  >
+                    <img src="img/join/02.png" alt="Icon" />
+                  </a>
+                </div>
+                <div class="join__item" style="--i: 3">
+                  <a
+                    target="_blank"
+                    href="https://t.me/mochientry"
+                    class="join__link"
+                  >
+                    <img src="img/join/03.svg" alt="Icon" />
+                  </a>
+                </div>
+                <div class="join__item" style="--i: 4">
+                  <a
+                    target="_blank"
+                    href="https://medium.com/@mochibase"
+                    class="join__link"
+                  >
+                    <img src="img/join/04.svg" alt="Icon" />
+                  </a>
+                </div>
+                <div class="join__item" style="--i: 5">
+                  <a
+                    target="_blank"
+                    href="https://www.dextools.io/app/en/base/pair-explorer/0xfcc89a1f250d76de198767d33e1ca9138a7fb54b?t=1717200972142"
+                    class="join__link"
+                  >
+                    <img src="img/join/05.svg" alt="Icon" />
+                  </a>
+                </div>
+                <div class="join__item" style="--i: 6">
+                  <a
+                    target="_blank"
+                    href="https://twitter.com/mochi_token"
+                    class="join__link"
+                  >
+                    <img src="img/join/06.svg" alt="Icon" />
+                  </a>
+                </div>
+              </div>
+              <div class="join__background">
+                <img src="img/join/cat.svg" alt="Cat Icon" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="page__line line">
+          <div class="line__line">
+            <div class="line__line-row">
+              <div class="line__line-item line__line-item--mob">
+                <span>Based on Sol</span>
+              </div>
+              <div class="line__line-item line__line-item--mob">
+                <img src="img/line/02.png" alt="Smile Icon" />
+              </div>
+              <div class="line__line-item line__line-item--tab">
+                <span>Based on Sol</span>
+              </div>
+              <div class="line__line-item line__line-item--tab">
+                <img src="img/line/03.png" alt="Smile Icon" />
+              </div>
+              <div class="line__line-item">
+                <span>Based on Sol</span>
+              </div>
+              <div class="line__line-item">
+                <img src="img/line/01.png" alt="Smile Icon" />
+              </div>
+              <div class="line__line-item line__line-item--pc">
+                <span>Based on Sol</span>
+              </div>
+              <div class="line__line-item line__line-item--pc">
+                <img src="img/line/02.png" alt="Smile Icon" />
+              </div>
+              <div class="line__line-item line__line-item--pc">
+                <span>Based on Sol</span>
+              </div>
+              <div class="line__line-item line__line-item--pc">
+                <img src="img/line/03.png" alt="Smile Icon" />
+              </div>
+            </div>
+            <div class="line__line-row">
+              <div class="line__line-item line__line-item--mob">
+                <span>Based on Sol</span>
+              </div>
+              <div class="line__line-item line__line-item--mob">
+                <img src="img/line/02.png" alt="Smile Icon" />
+              </div>
+              <div class="line__line-item line__line-item--tab">
+                <span>Based on Sol</span>
+              </div>
+              <div class="line__line-item line__line-item--tab">
+                <img src="img/line/03.png" alt="Smile Icon" />
+              </div>
+              <div class="line__line-item">
+                <span>Based on Sol</span>
+              </div>
+              <div class="line__line-item">
+                <img src="img/line/01.png" alt="Smile Icon" />
+              </div>
+              <div class="line__line-item line__line-item--pc">
+                <span>Based on Sol</span>
+              </div>
+              <div class="line__line-item line__line-item--pc">
+                <img src="img/line/02.png" alt="Smile Icon" />
+              </div>
+              <div class="line__line-item line__line-item--pc">
+                <span>Based on Sol</span>
+              </div>
+              <div class="line__line-item line__line-item--pc">
+                <img src="img/line/03.png" alt="Smile Icon" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          type="button"
+          data-popup="#popup"
+          style="display: none"
+        ></button>
+      </main>
+      <footer
+        data-watch-threshold="0.6"
+        data-watch-once
+        data-watch
+        class="footer"
+      >
+        <div class="footer__container">
+          <div class="footer__box">
+            <div class="footer__top">
+              <div class="footer__columns">
+                <div class="footer__column">
+                  <a
+                    target="_blank"
+                    href="#"
+                    data-goto=".page__how-to-buy"
+                    class="footer__column-item active"
+                    >how to get</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://t.me/Mochi_Inspector_bot"
+                    class="footer__column-item"
+                    >Inspector bot</a
+                  >
+                  <a
+                    href="#"
+                    data-goto=".page__join"
+                    class="footer__column-item"
+                    >CONTACT US</a
+                  >
+                </div>
+                <div class="footer__column">
+                  <a
+                    target="_blank"
+                    href="https://opensea.io/collection/mochimonsbase"
+                    class="footer__column-item"
+                    >Dugemons NFTs</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://zora.co/collect/base:0xf559cd78d14f879c0e974ce38ce5fe6cd36c804c"
+                    class="footer__column-item"
+                    >Dugemons Media</a
+                  >
+                  <a
+                    target="_blank"
+                    href="index.htm#About"
+                    class="footer__column-item"
+                    >About</a
+                  >
+                </div>
+              </div>
+              <div class="footer__social">
+                <a
+                  target="_blank"
+                  href="https://www.dextools.io/app/en/base/pair-explorer/0xfcc89a1f250d76de198767d33e1ca9138a7fb54b?t=1717200972142"
+                  class="footer__social-item"
+                >
+                  <img src="img/footer/01.svg" alt="Icon" />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://t.me/mochientry"
+                  class="footer__social-item"
+                >
+                  <img src="img/footer/02.svg" alt="Icon" />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/themochimons"
+                  class="footer__social-item"
+                >
+                  <img src="img/footer/06.svg" alt="Icon" />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://medium.com/@mochibase"
+                  class="footer__social-item"
+                >
+                  <img src="img/footer/04.svg" alt="Icon" />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://x.com/mochi_token"
+                  class="footer__social-item"
+                >
+                  <img src="img/footer/05.svg" alt="Icon" />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://warpcast.com/~/channel/mochi"
+                  class="footer__social-item"
+                >
+                  <img src="img/footer/07.svg" alt="Icon" />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://opensea.io/collection/mochimonsbase"
+                  class="footer__social-item"
+                >
+                  <img src="img/footer/08.svg" alt="Icon" />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://magiceden.io/collections/base/0x949bed087ff0241e04e98d807de3c3dd97eaa381"
+                  class="footer__social-item"
+                >
+                  <img src="img/footer/09.svg" alt="Icon" />
+                </a>
+              </div>
+            </div>
+            <div class="footer__bottom">
+              <div class="footer__bottom-top">
+                <a href="mailto:info@mochithecatcoin.com" class="footer__email"
+                  ><span>INFO@MOCHITHECATCOIN.COM</span
+                  ><img src="img/footer/email.svg" alt="Email Icon"
+                /></a>
+                <div class="footer__copy">2025 © ALL RIGHTS RESERVED</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__decor">
+          <img loading="lazy" src="img/footer/cat.png" alt="Cat Image" />
+        </div>
+      </footer>
+    </div>
+    <script src="js/app.min.js?_v=20240529214234"></script>
+    <script>
+      function copyToClipboard(text) {
+        // Create a temporary textarea element
+        const textarea = document.createElement('textarea');
+        textarea.value = text;
+        textarea.style.position = 'fixed';
+        textarea.style.opacity = '0';
+        document.body.appendChild(textarea);
+        
+        // Select and copy the text
+        textarea.select();
+        document.execCommand('copy');
+        
+        // Remove the temporary element
+        document.body.removeChild(textarea);
+        
+        // Show success popup
+        const popup = document.getElementById('popup');
+        if (popup) {
+          popup.setAttribute('aria-hidden', 'false');
+          popup.classList.add('popup_show');
+          
+          // Auto-hide popup after 3 seconds
+          setTimeout(function() {
+            popup.setAttribute('aria-hidden', 'true');
+            popup.classList.remove('popup_show');
+          }, 3000);
+        }
+      }
+      
+      // Close popup when OK button is clicked
+      document.addEventListener('DOMContentLoaded', function() {
+        // Show hero section after page load
+        const heroSection = document.querySelector('.page__hero.hero');
+        if (heroSection) {
+          setTimeout(() => {
+            heroSection.style.opacity = '1';
+          }, 1000);
+        }
+        
+        const popup = document.getElementById('popup');
+        const closeButton = popup.querySelector('[data-close]');
+        
+        if (closeButton) {
+          closeButton.addEventListener('click', function() {
+            popup.setAttribute('aria-hidden', 'true');
+            popup.classList.remove('popup_show');
+          });
+        }
+        
+        // Add event listeners for switch buttons
+        const switchButtons = document.querySelectorAll('.book-top-how-to-buy__item-first-page-lable');
+        switchButtons.forEach(function(button, index) {
+          button.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            // Check which book is currently active
+            const activeBook = document.querySelector('.top-how-to-buy__book.active');
+            const allBooks = document.querySelectorAll('.top-how-to-buy__book');
+            const desktopBook = allBooks[0];
+            const mobileBook = allBooks[1];
+            
+            console.log('🔍 DEBUG: Button clicked, index:', index);
+            console.log('🔍 DEBUG: Active book:', activeBook);
+            console.log('🔍 DEBUG: Desktop book:', desktopBook);
+            console.log('🔍 DEBUG: Mobile book:', mobileBook);
+            console.log('🔍 DEBUG: Active === Desktop:', activeBook === desktopBook);
+            console.log('🔍 DEBUG: Active === Mobile:', activeBook === mobileBook);
+            
+            // Determine which button was clicked based on current state
+            if (activeBook === desktopBook) {
+              // Desktop is active, so clicking any button should switch to Mobile
+              console.log('Desktop is active, switching to Mobile');
+              switchToDesktop(); // TEMPORARY: Swapped to test
+            } else if (activeBook === mobileBook) {
+              // Mobile is active, so clicking any button should switch to Desktop
+              console.log('Mobile is active, switching to Desktop');
+              switchToMobile(); // TEMPORARY: Swapped to test
+            } else {
+              // Fallback to index-based switching
+              if (index === 0) {
+                switchToDesktop();
+              } else {
+                switchToMobile();
+              }
+            }
+          });
+        });
+      });
+      
+      // Switch between Desktop and Mobile versions
+      function switchToDesktop() {
+        console.log('Switching to Desktop');
+        const allBooks = document.querySelectorAll('.top-how-to-buy__book');
+        const desktopBook = allBooks[0]; // First book is desktop
+        const mobileBook = allBooks[1];  // Second book is mobile
+        
+        // Find which book is currently active
+        const activeBook = document.querySelector('.top-how-to-buy__book.active');
+        console.log('Currently active book:', activeBook);
+        
+        console.log('Desktop book:', desktopBook);
+        console.log('Mobile book:', mobileBook);
+        
+        if (desktopBook && mobileBook) {
+          // Remove any inline styles that might interfere
+          desktopBook.removeAttribute('style');
+          mobileBook.removeAttribute('style');
+          
+          // Force remove active class from all books first
+          allBooks.forEach(book => book.classList.remove('active'));
+          
+          // Show desktop book and hide mobile book
+          desktopBook.classList.add('active');
+          mobileBook.classList.remove('active');
+          
+          // Double-check that the switch worked
+          console.log('🔍 VERIFICATION:');
+          console.log('Desktop has active class:', desktopBook.classList.contains('active'));
+          console.log('Mobile has active class:', mobileBook.classList.contains('active'));
+          
+          // Force reflow to ensure CSS is applied
+          desktopBook.offsetHeight;
+          mobileBook.offsetHeight;
+          
+          console.log('After switch - Desktop active:', desktopBook.classList.contains('active'));
+          console.log('After switch - Mobile active:', mobileBook.classList.contains('active'));
+          
+          // Visual feedback
+          console.log('✅ SUCCESS: Switched to Desktop version');
+          console.log('🖥️ Desktop content should now be visible');
+          
+          // Update title text
+          const desktopTitle = document.querySelector('.book-top-how-to-buy__item-first-page-body p');
+          if (desktopTitle) {
+            desktopTitle.textContent = 'ON DESKTOP';
+          }
+          
+          // Update labels - Desktop is active
+          const desktopLabels = desktopBook.querySelector('.book-top-how-to-buy__item-first-page-lables');
+          const mobileLabels = mobileBook.querySelector('.book-top-how-to-buy__item-first-page-lables');
+          
+          if (desktopLabels && mobileLabels) {
+            // Desktop book: Desktop label active, Mobile label inactive
+            const desktopDesktopLabel = desktopLabels.children[0];
+            const desktopMobileLabel = desktopLabels.children[1];
+            
+            desktopDesktopLabel.innerHTML = '<img src="img/how-to-buy/label-box-active.svg" alt="Icon" /><img src="img/how-to-buy/desktop.svg" alt="Icon" />';
+            desktopMobileLabel.innerHTML = '<img src="img/how-to-buy/label-box.svg" alt="Icon" /><img src="img/how-to-buy/mobile.svg" alt="Icon" />';
+            
+            // Mobile book: Desktop label inactive, Mobile label inactive
+            const mobileDesktopLabel = mobileLabels.children[0];
+            const mobileMobileLabel = mobileLabels.children[1];
+            
+            mobileDesktopLabel.innerHTML = '<img src="img/how-to-buy/label-box.svg" alt="Icon" /><img src="img/how-to-buy/desktop.svg" alt="Icon" />';
+            mobileMobileLabel.innerHTML = '<img src="img/how-to-buy/label-box.svg" alt="Icon" /><img src="img/how-to-buy/mobile.svg" alt="Icon" />';
+          }
+        }
+      }
+      
+      function switchToMobile() {
+        console.log('Switching to Mobile');
+        const allBooks = document.querySelectorAll('.top-how-to-buy__book');
+        const desktopBook = allBooks[0]; // First book is desktop
+        const mobileBook = allBooks[1];  // Second book is mobile
+        
+        // Find which book is currently active
+        const activeBook = document.querySelector('.top-how-to-buy__book.active');
+        console.log('Currently active book:', activeBook);
+        
+        console.log('Desktop book:', desktopBook);
+        console.log('Mobile book:', mobileBook);
+        
+        if (desktopBook && mobileBook) {
+          // Remove any inline styles that might interfere
+          desktopBook.removeAttribute('style');
+          mobileBook.removeAttribute('style');
+          
+          // Force remove active class from all books first
+          allBooks.forEach(book => book.classList.remove('active'));
+          
+          // Hide desktop book and show mobile book
+          desktopBook.classList.remove('active');
+          mobileBook.classList.add('active');
+          
+          // Force reflow to ensure CSS is applied
+          desktopBook.offsetHeight;
+          mobileBook.offsetHeight;
+          
+          console.log('After switch - Desktop active:', desktopBook.classList.contains('active'));
+          console.log('After switch - Mobile active:', mobileBook.classList.contains('active'));
+          
+          // Debug display state
+          console.log('Desktop display:', window.getComputedStyle(desktopBook).display);
+          console.log('Mobile display:', window.getComputedStyle(mobileBook).display);
+          
+          // Debug content
+          const desktopSteps = desktopBook.querySelectorAll('.book-top-how-to-buy__item-text');
+          const mobileSteps = mobileBook.querySelectorAll('.book-top-how-to-buy__item-text');
+          console.log('Desktop steps count:', desktopSteps.length);
+          console.log('Mobile steps count:', mobileSteps.length);
+          
+          // Visual feedback
+          console.log('✅ SUCCESS: Switched to Mobile version');
+          console.log('📱 Mobile content should now be visible');
+          
+          // Update title text
+          const mobileTitle = document.querySelector('.book-top-how-to-buy__item-first-page-body p');
+          if (mobileTitle) {
+            mobileTitle.textContent = 'ON MOBILE';
+          }
+          
+          // Update labels - Mobile is active
+          const desktopLabels = desktopBook.querySelector('.book-top-how-to-buy__item-first-page-lables');
+          const mobileLabels = mobileBook.querySelector('.book-top-how-to-buy__item-first-page-lables');
+          
+          if (desktopLabels && mobileLabels) {
+            // Desktop book: Desktop label inactive, Mobile label inactive
+            const desktopDesktopLabel = desktopLabels.children[0];
+            const desktopMobileLabel = desktopLabels.children[1];
+            
+            desktopDesktopLabel.innerHTML = '<img src="img/how-to-buy/label-box.svg" alt="Icon" /><img src="img/how-to-buy/desktop.svg" alt="Icon" />';
+            desktopMobileLabel.innerHTML = '<img src="img/how-to-buy/label-box.svg" alt="Icon" /><img src="img/how-to-buy/mobile.svg" alt="Icon" />';
+            
+            // Mobile book: Desktop label inactive, Mobile label active
+            const mobileDesktopLabel = mobileLabels.children[0];
+            const mobileMobileLabel = mobileLabels.children[1];
+            
+            mobileDesktopLabel.innerHTML = '<img src="img/how-to-buy/label-box.svg" alt="Icon" /><img src="img/how-to-buy/desktop.svg" alt="Icon" />';
+            mobileMobileLabel.innerHTML = '<img src="img/how-to-buy/label-box-active.svg" alt="Icon" /><img src="img/how-to-buy/mobile.svg" alt="Icon" />';
+          }
+        }
+      }
+    </script>
+    <div id="popup" aria-hidden="true" class="popup">
+      <div class="popup__wrapper">
+        <div class="popup__content">
+          <button data-close type="button" class="popup__close">
+            <img src="img/line/close.png" alt="" />
+          </button>
+          <div class="popup__text">
+            $DUGE Contract Address copied successfully
+          </div>
+          <button data-close class="popup__button"><span>Ok</span></button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
