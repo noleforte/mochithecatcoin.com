@@ -6095,6 +6095,10 @@ span.orange {
     .line__cloud-title {
         margin-bottom: .25rem
     }
+    
+    .contract-address {
+        word-break: break-all !important;
+    }
 
     .line__cloud-bottom {
         -webkit-column-gap: .25rem;
