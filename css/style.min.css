@@ -2034,6 +2034,8 @@ span.orange {
 .base__decor-item--1 {
     top: 18%;
     left: -5%;
+    width: 12rem;
+    height: auto;
     -webkit-animation: fly 2s ease-in-out infinite;
     animation: fly 2s ease-in-out infinite
 }
@@ -2041,7 +2043,7 @@ span.orange {
 .base__decor-item--2 {
     -webkit-animation: fly 2s ease-in-out 1s infinite;
     animation: fly 2s ease-in-out 1s infinite;
-    width: 17.375rem;
+    width: 12rem;
     aspect-ratio: 278/374;
     top: 16%;
     right: 0%;
