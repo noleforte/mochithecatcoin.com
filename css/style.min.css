@@ -1507,11 +1507,17 @@ span.orange {
 }
 
 .buy-mochi__item-box .buy-mochi__item:nth-child(1) {
-    background-color: #fedcda
+    background-image: url(../img/hero/pic_5.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
 }
 
 .buy-mochi__item-box .buy-mochi__item:nth-child(2) {
-    background-color: #296bfc
+    background-image: url(../img/hero/pic_6.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
 }
 
 .buy-mochi__item-box .buy-mochi__item:nth-child(2) img:nth-child(2) {
@@ -1545,7 +1551,10 @@ span.orange {
 }
 
 .buy-mochi__item:nth-child(1) {
-    background-color: #ffdfb0;
+    background-image: url(../img/hero/pic_7.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     margin-bottom: -.0625rem
 }
 
@@ -1557,7 +1566,10 @@ span.orange {
 
 .buy-mochi__item:nth-child(3) {
     margin-top: -.0625rem;
-    background-color: #c1d6ff
+    background-image: url(../img/hero/pic_7.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
 }
 
 .content-buy-mochi {
@@ -1582,7 +1594,10 @@ span.orange {
 .content-buy-mochi__background {
     position: absolute;
     inset: 0;
-    background-color: #ff9e49
+    background-image: url(../img/hero/pic_2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
 }
 
 .content-buy-mochi__title {
@@ -1790,7 +1805,10 @@ span.orange {
     position: absolute;
     z-index: 0;
     inset: 0;
-    background-color: #fff
+    background-image: url(../img/hero/bg1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
 }
 
 .base::after {
@@ -1798,8 +1816,7 @@ span.orange {
     position: absolute;
     z-index: 1;
     inset: 0;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(28.27%, rgba(255, 255, 255, 0)), to(rgba(27, 241, 255, .3)));
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 28.27%, rgba(27, 241, 255, .3) 100%)
+    background: transparent
 }
 
 .base__container {
@@ -1813,8 +1830,8 @@ span.orange {
 }
 
 .base__decor-item--1 {
-    top: 50%;
-    left: -10%;
+    top: 18%;
+    left: -12%;
     -webkit-animation: fly 2s ease-in-out infinite;
     animation: fly 2s ease-in-out infinite
 }
@@ -1824,8 +1841,8 @@ span.orange {
     animation: fly 2s ease-in-out 1s infinite;
     width: 17.375rem;
     aspect-ratio: 278/374;
-    top: 10%;
-    right: 0;
+    top: 16%;
+    right: -8%;
     position: absolute
 }
 
@@ -2011,8 +2028,9 @@ span.orange {
 }
 
 .item-base__text {
+    font-family: "TT Trailers Trial Black";
     font-style: normal;
-    font-weight: 700;
+    font-weight: 900;
     line-height: 150%
 }
 
@@ -2486,7 +2504,10 @@ span.orange {
 .how-to-buy {
     position: relative;
     z-index: 2;
-    background-color: #fff
+    background-image: url(../img/hero/pic_7.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
 }
 
 .how-to-buy__top {
@@ -4071,7 +4092,7 @@ span.orange {
         position: absolute;
         z-index: 3;
         top: 50%;
-        left: 50%;
+        left: 48%;
         width: 30%;
         min-width: 20rem;
         -webkit-transform: translate(-50%, -25%);
