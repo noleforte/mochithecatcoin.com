@@ -278,7 +278,7 @@ Uri: https://mochithecatcoin.com/img/line/02.png
 File Name: C:\Downloaded Web Sites\mochithecatcoin.com\img\line\02.png
 Content Type: image/png
 
-Uri: https://mochithecatcoin.com/img/line/03.png
+Uri: https://mochithecatcoin.com/
 File Name: C:\Downloaded Web Sites\mochithecatcoin.com\img\line\03.png
 Content Type: image/png
 
