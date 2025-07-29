@@ -2033,7 +2033,7 @@ span.orange {
 
 .base__decor-item--1 {
     top: 18%;
-    left: -5%;
+    left: -13%;
     width: 12rem;
     height: auto;
     -webkit-animation: fly 2s ease-in-out infinite;
@@ -2052,7 +2052,7 @@ span.orange {
 
 .base__decor-item--2 img {
     position: absolute;
-    left: 130%;
+    left: 86%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%)
