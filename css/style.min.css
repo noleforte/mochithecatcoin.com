@@ -512,11 +512,19 @@ body::after {
 .footer {
     position: relative;
     z-index: 2;
-    background-color: #000;
+    background-image: url(../img/footer/pic_2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #fff
 }
 
 .footer._watcher-view .footer__decor {
+    -webkit-animation: to-up .3s ease .2s forwards;
+    animation: to-up .3s ease .2s forwards
+}
+
+.footer._watcher-view .footer__left-decor {
     -webkit-animation: to-up .3s ease .2s forwards;
     animation: to-up .3s ease .2s forwards
 }
@@ -530,14 +538,35 @@ body::after {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-column-gap: 2.5rem;
-    -moz-column-gap: 2.5rem;
-    column-gap: 2.5rem
+    gap: 1rem
+}
+
+
+
+.footer__left-decor {
+    position: absolute;
+    pointer-events: none;
+    z-index: 2;
+    bottom: 15%;
+    left: 0;
+    width: 20%;
+    min-width: 13.75rem;
+    aspect-ratio: 1;
+    opacity: 1;
+    visibility: visible;
+    overflow: visible
+}
+
+.footer__left-decor img {
+    width: 100%;
+    margin-top: 40%
 }
 
 .footer__columns {
@@ -546,7 +575,10 @@ body::after {
     display: flex;
     -webkit-column-gap: 5rem;
     -moz-column-gap: 5rem;
-    column-gap: 5rem
+    column-gap: 5rem;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
 }
 
 .footer__column {
@@ -555,9 +587,10 @@ body::after {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    row-gap: 1rem
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 5rem;
+    margin-bottom: 3%;
 }
 
 .footer__column-item {
@@ -577,9 +610,9 @@ body::after {
 }
 
 .footer__social {
-    max-width: 22.125rem;
-    -ms-flex-item-align: start;
-    align-self: flex-start;
+
+    -ms-flex-item-align: center;
+    align-self: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -588,7 +621,7 @@ body::after {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    gap: 1.5rem
+    gap: 5.5rem
 }
 
 .footer__social-item {
@@ -707,64 +740,66 @@ body::after {
     width: 20%;
     min-width: 13.75rem;
     aspect-ratio: 1;
-    opacity: 0;
-    visibility: hidden
+    opacity: 1;
+    visibility: visible;
+    overflow: visible
 }
 
 .footer__decor img {
-    width: 100%
+    width: 100%;
+    margin-top: 40%;
 }
 
 ::-webkit-scrollbar {
     width: .75rem;
     border-radius: 0 1rem 1rem 0;
-    background-color: #fff
+    background-color: #fff;
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: #ff9e49;
     border: .0625rem solid #fff;
-    border-radius: 1.25rem
+    border-radius: 1.25rem;
 }
 
 @-webkit-keyframes fly {
     0% {
         -webkit-transform: translateY(0);
-        transform: translateY(0)
+        transform: translateY(0);
     }
 
     50% {
         -webkit-transform: translateY(.9375rem);
-        transform: translateY(.9375rem)
+        transform: translateY(.9375rem);
     }
 
     100% {
         -webkit-transform: translateY(0);
-        transform: translateY(0)
+        transform: translateY(0);
     }
 }
 
 @keyframes fly {
     0% {
         -webkit-transform: translateY(0);
-        transform: translateY(0)
+        transform: translateY(0);
     }
 
     50% {
         -webkit-transform: translateY(.9375rem);
-        transform: translateY(.9375rem)
+        transform: translateY(.9375rem);
     }
 
     100% {
         -webkit-transform: translateY(0);
-        transform: translateY(0)
+        transform: translateY(0);
     }
 }
 
 @-webkit-keyframes line {
     0% {
         -webkit-transform: translateX(0);
-        transform: translateX(0)
+        transform: translateX(0);
     }
 
     100% {
@@ -2034,6 +2069,19 @@ span.orange {
     line-height: 150%
 }
 
+/* Стили для текстов в items секции с тем же шрифтом */
+.item-items__title {
+    font-family: "TT Trailers Trial Black";
+    font-style: normal;
+    font-weight: 900;
+}
+
+.item-items__text {
+    font-family: "TT Trailers Trial Black";
+    font-style: normal;
+    font-weight: 900;
+}
+
 .item-base__text>span {
     position: relative
 }
@@ -2504,7 +2552,7 @@ span.orange {
 .how-to-buy {
     position: relative;
     z-index: 2;
-    background-image: url(../img/hero/pic_7.png);
+    background-image: url(../img/hero/bg1.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat
@@ -2513,8 +2561,7 @@ span.orange {
 .how-to-buy__top {
     position: relative;
     z-index: 2;
-    background: -webkit-gradient(linear, left top, left bottom, from(#fffbf2), color-stop(80%, #fffbf2), to(rgba(255, 251, 242, 0)));
-    background: linear-gradient(180deg, #fffbf2 0, #fffbf2 80%, rgba(255, 251, 242, 0) 100%)
+
 }
 
 .how-to-buy__bottom {
@@ -4771,6 +4818,8 @@ span.orange {
         align-items: center;
         row-gap: 1.875rem
     }
+
+
 
     .footer__social {
         -ms-flex-item-align: center;
