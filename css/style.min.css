@@ -4258,10 +4258,7 @@ span.orange {
         width: 300%
     }
 
-    .loaded .hero__background {
-        -webkit-animation: line 150s linear 3.45s infinite;
-        animation: line 150s linear 3.45s infinite
-    }
+
 
     .hero__background img:nth-child(1) {
         width: 33.3%
