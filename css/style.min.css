@@ -472,7 +472,7 @@ body::after {
 }
 
 .menu__link>span {
-    font-size: .9375rem;
+    font-size: 1.5rem;
     font-weight: 900;
     line-height: normal;
     text-transform: uppercase
